@@ -28,7 +28,7 @@ Boxlines is a deliberately simple take on the Excalidraw idea. It does a handful
 | **Look** | Switch between clean lines and a hand-drawn sketch style. |
 | **Save** | Download your diagram as a `.json` file and open it again later. |
 
-It is a single `index.html` file. No framework, no bundler, no install.
+Three small files, plain HTML, CSS and JavaScript. No framework, no bundler, no install.
 
 ## Quick start
 
@@ -132,7 +132,12 @@ An arrow end is either bound to a box (`id` is set and the end snaps to that box
 
 ```
 .
-├── index.html   The whole app: markup, styles and script
+├── index.html      Page structure and the toolbar, canvas and panel markup
+├── css/
+│   └── style.css   Theme colours (light and dark), layout and component styles
+├── js/
+│   └── app.js      Editor logic: shapes, connectors, text, styling, history, save and open
+├── LICENSE
 └── README.md
 ```
 
